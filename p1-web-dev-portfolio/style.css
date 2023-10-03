@@ -1,0 +1,422 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif ;
+    box-sizing: border-box;
+    font-size: 3vb;
+  }
+  .container{
+    width: 100%;
+    height: 682px;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+    margin-top: 7.7vh;
+  }
+  .slides{
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(#9ba4ac, #50565b, #1d1f21);
+    scroll-snap-align: start;
+  }
+  .slide2{
+    background: linear-gradient(#9ba4ac, #50565b, #1d1f21);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .slide3{
+    background: linear-gradient(#9ba4ac, #50565b, #1d1f21);
+    display: grid;
+    grid-template-areas: "header header header header"
+                         "skill skill skill skill"
+                         "skill skill skill skill"
+                         "skill skill skill skill";
+  }
+  
+  .slide4{
+    background: linear-gradient(#9ba4ac, #50565b, #1d1f21);
+    padding-top: 10px;
+  }
+  .header{
+  display: flex;
+  justify-content: space-between;
+  background-color: #1d1f21;
+  position: fixed;   
+  width: 100%;
+  top: 0%;
+  }
+  #logo{
+    width: 150px;
+    padding: 10px;
+  }
+  .header ul{
+    margin-top: 15px;
+    margin-right: 20px;
+  }
+  .header ul li{
+    list-style-type: none;
+    display: inline;
+    padding: 10px;
+    font-weight: 700;
+    color: #BDE97D;
+  }
+  .header2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+#myself{
+  width: 700px;
+}
+.intro{
+  width: 600px;
+}
+#hi{
+  font-size: 30px;
+  font-weight: 700;
+  color: rgb(245, 233, 233);
+}
+#name{
+  font-size: 40px;
+  font-weight: 700;
+  color: rgb(245, 233, 233);
+}
+
+  /* Skills Css */
+.skill{
+    grid-area: header;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.main{
+  grid-area: skill;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container1{
+    max-width: 500px;
+    width: 100%;  
+    background: #fff;
+    margin: 0 15px;
+    padding: 20px 20px;
+    border-radius: 7px;   
+}
+.container2 {
+    max-width: 500px;
+    width: 100%;
+    background: #fff;
+    margin: 0 15px;
+    padding: 20px 20px;
+    border-radius: 7px;
+}
+
+.container1 .skill-box{
+    width: 100%;
+    margin: 25px 0;
+}
+.container2 .skill-box{
+    width: 100%;
+    margin: 25px 0;
+}
+.skill-box .title{
+    display: block;
+    font-size: 14px;
+    font-weight: 600;
+    color: #333;
+}
+.skill-box .skill-bar{
+    height: 8px;
+    width: 100%;
+    border-radius: 6px;
+    margin-top: 6px;
+    background: rgba(0,0,0,0.1);
+}
+.skill-bar .skill-per{
+    position: relative;
+    display: block;
+    height: 100%;
+    width: 90%;
+    border-radius: 6px;
+    background: #072f5b;
+}
+
+.skill-per .tooltip{
+    position: absolute;
+    right: -14px;
+    top: -28px;
+    font-size: 9px;
+    font-weight: 500;
+    color: #fff;
+    padding: 2px 6px;
+    border-radius: 3px;
+    background: #072f5b;
+}
+.skill-bar .css{
+    width: 70%;
+}
+.skill-bar .js{
+    width: 80%;
+}
+.skill-bar .reactjs{
+    width: 30%;
+}
+.skill-bar .nodejs{
+    width: 30%;
+}
+.skill-bar .mongodb{
+    width: 30%;
+}
+#title-Tag-Line {
+  font-size: 20px;
+}
+
+
+  /* Contact Me Css */
+.form {
+  background: #54525200;
+  box-shadow: 0 30px 60px 0 rgba(90, 116, 148, 0.4);
+  border-radius: 5px;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 5px;
+  padding-bottom: 5px; 
+  border-top: 5px solid rgb(58, 53, 53);
+  opacity: 1;
+}
+
+.title1{
+  display: block;
+  font-family: sans-serif;
+  margin: 10px auto 5px;
+  width: 300px;
+}
+.pageTitle{
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.secondaryTitle{
+  color: rgb(239, 225, 225);
+}
+
+.name {
+  background-color: #ebebeb;
+}
+
+.name:hover {
+  border-bottom: 5px solid #BDE97D;
+  width: 380px;
+  transition: ease 0.5s;
+}
+
+.email {
+  background-color: #ebebeb;
+  height: 2em;
+}
+
+.email:hover {
+  border-bottom: 5px solid #BDE97D;
+  width: 380px;
+  transition: ease 0.5s;
+}
+
+.message {
+  background-color: #ebebeb;
+  overflow: hidden;
+  height: 10rem;
+}
+
+.message:hover {
+  border-bottom: 5px solid #BDE97D;
+  width: 380px;
+  transition: ease 0.5s;
+}
+
+.formEntry {
+  display: block;
+  margin: 30px auto;
+  min-width: 300px;
+  padding: 10px;
+  border-radius: 2px;
+  border: none;
+  transition: all 0.5s ease 0s;
+}
+.submit {
+  width: 200px;
+  color: black;
+  background-color: #eaf2df;
+  font-size: 20px;
+}
+
+.submit:hover {
+  border-bottom: 5px solid #BDE97D;
+  transition: ease 0.5s;
+}
+.links{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+#icons{
+  width:42px;
+  height:42px;
+}
+#icons:hover{
+  width:45px;
+  height:45px;
+}
+.aboutme1{
+  width: 30%;
+  height: auto;
+  margin-right: 100px;
+}
+.aboutme2{
+  width: 30%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.greetings{
+  color: white;
+}
+a{
+  text-decoration: none;
+}
+a:hover{
+  color: black;
+  background-color: gray;
+}
+a:visited{
+color: #BDE97D;
+}
+p{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+  
+  @media screen and (width < 479px) {
+  /* start of phone styles */
+ 
+   #myself{
+    width: 400px;
+    position: relative;
+    top: 250px;
+    left: -150px;
+    }
+    #hi{
+      font-size: 10px;
+      font-weight: 700;
+      color: rgb(245, 233, 233);
+      margin-left: auto;
+      margin-right: auto;
+    }
+    #name{
+      font-size: 20px;
+      font-weight: 700;
+      color: rgb(245, 233, 233);
+      width: 300px;
+    }
+    .intro{
+     position: relative;
+     left: 150px;
+     top: -10px;
+    }
+    
+    .header ul li{
+      list-style-type: none;
+      display: inline;
+      font-weight: 600;
+      color: #BDE97D;
+      font-size: 20px;
+    }
+    .slide2{
+      display: grid;
+      grid-template-areas: "top"
+                            "bot";
+      width: 100%;             
+    }
+    .aboutme1{
+      grid-area: top;
+      position: relative;
+      left: 50px;
+      width: 300px;
+    }
+    .aboutme2{
+      grid-area: bot;
+      position: relative;
+      left: 150px;
+      top: -150px;
+      padding: 20px;
+      width: 250;
+    }
+    .greetings{
+      font-size: 15px;
+    }
+    .download{
+      font-size: 15px;
+    }
+    .slide3{
+      display: grid;
+      grid-template-areas: "header"
+                           "skill";               
+    }
+    .main{
+     display: table-row;
+    }
+    .container1{
+  width: 90%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+    }
+    .container2{
+      width: 90%;
+      padding-top: 2%;
+      padding-bottom: 2%; 
+      margin-top: 5px;
+    }
+    .skill{
+      margin-top: -70px;
+    }
+    .title1{
+      font-size: 20px;
+    }
+    .formEntry{
+      height: 40px;
+    }
+    .form{
+      margin-top: 10px;
+      width: 90%;
+    }
+    .slides{
+      width: 100%;
+      height: 100%;
+      scroll-snap-align: start;
+      margin-top: 0px;
+    }
+    
+    
+  }
+
+  @media screen and (width < 1536px) {
+    /* start of large tablet styles */
+    .container{
+      width: 100%;
+      height: 743px;
+      overflow-y: scroll;
+      scroll-snap-type: y mandatory;
+      margin-top: 7.2vh;
+    }
+    .header2{
+      margin-left: 60px;
+    }
+    #myself{
+      position: relative;
+      bottom: -102px;
+    }
+  }
+  
